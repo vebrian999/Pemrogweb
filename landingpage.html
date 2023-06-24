@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoliCation</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+    <body>
+    <div class=" bg-[url('./asset/navbarimg1.png')]  bg-no-repeat ">
+    <div class="container mx-auto py-4">
+        <!-- navbar -->
+        <nav class="flex justify-between items-center">
+            <div>
+            <ul class="font-bold text-3xl opacity-100">
+                <li><img class="w-16" src="./asset/logokita.png" alt=""></li>
+            </ul>
+            </div>
+            <ul class="font-semibold text-2xl lg:flex gap-6 hidden">
+                <!-- <li>Trends</li>
+                <li>Product</li>
+                <li>LookYou</li>
+                <li>About</li>
+                <img src="" alt=""> -->
+            </ul>
+            <div class="text-2xl font-bold gap-6 lg:flex hidden">
+                <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl ">LOGIN</button>
+                <button class="text-blue-400 outline px-6 py-2.5 rounded-lg text-2xl ">SIGN IN</button>
+            </div>
+            <button class="lg:hidden block buttonToogle">
+                <img src="./asset/humburger.png" alt="hamburger">
+            </button>
+        </nav>
+        <!-- mobileMenu(responsifmobile) -->
+       <div class="mobilemenu hidden">   
+            <ul class="font-semibold gap-6">
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400  bg-opacity-70 ease-in duration-300">Trends</li>
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400  bg-opacity-70 ease-in duration-300">Product</li>
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400  bg-opacity-70 ease-in duration-300">LookYou</li>
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400  bg-opacity-70 ease-in duration-300">About</li>
+                <img class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300" src="../asset/cart.png" alt="">
+            </ul>
+              <div class="text-2xl font-bold gap-2 flex">
+                <button class=" w-full text-white bg-blue-400 px-6 py-3 text-2xl ">LOGIN</button>
+                <button class=" w-full text-blue-400 outline px-6 py-2.5 ">SIGN IN</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+<!-- Navbar Mobile -->
+
+ <script>
+        const buttonToogle = document.querySelector('.buttonToogle')
+        const mobilemenu = document.querySelector('.mobilemenu')
+
+        buttonToogle.addEventListener('click', function () {
+            mobilemenu.classList.toggle('hidden');
+        })
+    </script>
+
+        <div class="mx-auto mr-auto mt-8">
+        <div class="items-center ">
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+                <swiper-container class="auto">
+                <swiper-slide class="mx-auto">
+                    <img src="./asset/banner1.png" alt="b1">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./asset/banner2.png" alt="b2">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./asset/banner3.png" alt="b3">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./asset/banner4.png" alt="b4">
+                </swiper-slide>
+                </swiper-container>
+        </div>
+        </div>
+
+            <div class="container flex items-start mx-auto ">
+      <div class="mt-10" style="width: 45%">
+        <div class="flex w-full text-right">
+          <div>
+            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
+          </div>
+          <img src="./asset/infoimg/img1.png" alt="" />
+        </div>
+        <div class="flex w-full text-right mt-10">
+          <div>
+            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
+          </div>
+          <img src="./asset/infoimg/img3.png" alt="" />
+        </div>
+      </div>
+      <div class="flex justify-center" style="width: 10%; height: 100%">
+        <img src="./asset/line1.png" alt="" />
+      </div>
+      <div class="mt-10" style="width: 45%">
+        <div class="flex w-full text-left">
+          <img src="./asset/infoimg/img4.png" alt="" />
+          <div>
+            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
+          </div>
+        </div>
+        <div class="flex w-full text-left mt-10">
+          <img src="./asset/infoimg/img2.png" alt="" />
+          <div>
+            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
+<!-- 
+    <div class=" ">
+    <div class="container mx-auto py-4">
+        <div>
+            <h1 class="text-3xl font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, minus.Lorem ipsum dolor sit amet.</h1> 
+            <p>Lorem ipsum dolor, sit </p>
+        </div>
+        <div>
+            <div class="grid grid-cols-5  gap-4 items-center ">
+                <div class="border border-red-300">
+                    <h1 class="font-semibold text-xl">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae modi incidunt doloremque cumque placeat neque. Nisi explicabo itaque est reprehenderit!</p>
+                </div>
+                <div class="border border-red-300">
+                    <img class="w-full" src="./asset/infoimg/img1.png" alt="img1">
+                </div>
+                <div class="mx-auto">
+                    <button><img src="./asset/line1.png" alt="line1"></button>
+                </div>
+                <div class=" ">
+                    <img class="w-full" src="./asset/infoimg/img2.png" alt="img2">
+                </div>
+                <div class="border border-red-300">
+                    <h1 class="font-semibold text-xl">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed deserunt reiciendis labore numquam officia facere, delectus debitis sit temporibus!</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4  gap-x-8 items-center my-auto ">
+                <div class="border border-red-300">
+                    <h1 class="font-semibold text-xl">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed deserunt reiciendis labore numquam officia facere, delectus debitis sit temporibus!</p>
+                </div>
+                <div class=" ">
+                    <img class="w-50%" src="./asset/infoimg/img3.png" alt="konten3">
+                </div>
+                <div class=" ">
+                    <img class="w-50%" src="./asset/infoimg/img4.png" alt="konten3">
+                </div>
+                <div class="border border-red-300">
+                    <h1 class="font-semibold text-xl">Lorem ipsum dolor sit amet.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sed deserunt reiciendis labore numquam officia facere, delectus debitis sit temporibus!</p>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    </div> -->
