@@ -11,11 +11,13 @@
       <div class="container mx-auto py-4">
         <!-- navbar -->
         <nav class="flex justify-between items-center">
+          <a href="landingpage.html">
           <div>
             <ul class="font-bold text-3xl opacity-100">
               <li><img class="w-16" src="./asset/logokita.png" alt="" /></li>
             </ul>
           </div>
+          </a>
           <ul class="font-semibold text-2xl lg:flex gap-6 hidden">
             <!-- <li>Trends</li>
                 <li>Product</li>
@@ -24,6 +26,7 @@
                 <img src="" alt=""> -->
           </ul>
           <div class="text-2xl font-bold gap-6 lg:flex hidden">
+            <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl">my E-tiket</button>
             <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl">LOGIN</button>
             <button class="text-blue-400 outline px-6 py-2.5 rounded-lg text-2xl">SIGN IN</button>
           </div>
@@ -78,39 +81,44 @@
         </swiper-container>
       </div>
     </div>
+      <div class="flex justify-center mt-16 py-2">
+        <span class="font-semibold text-xl">
+          <p>Why HOLOCATION</p>
+        </span>
+      </div>
+    <div class="container flex items-start mx-auto mt-10 ">
 
-    <div class="container flex items-start mx-auto mt-10">
-      <div class="mt-10" style="width: 45%">
-        <div class="flex w-full text-right">
+      <div class="mt-10 " style="width: 45% ">
+        <div class="flex flex-col lg:flex-row w-full text-right">
           <div>
-            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="font-semibold">1. Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
           </div>
           <img src="./asset/infoimg/img1.png" alt="" />
         </div>
-        <div class="flex w-full text-right mt-10">
+        <div class="flex flex-col lg:flex-row w-full text-right mt-10">
           <div>
-            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="font-semibold">3. Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
           </div>
-          <img src="./asset/infoimg/img3.png" alt="" />
+          <img class="" src="./asset/infoimg/img3.png" alt="" />
         </div>
       </div>
       <div class="flex justify-center" style="width: 10%; height: 100%">
-        <img src="./asset/line1.png" alt="" />
+        <img class="hidden lg:block" src="./asset/line1.png" alt="" />
       </div>
       <div class="mt-10" style="width: 45%">
-        <div class="flex w-full text-left">
+        <div class="flex flex-col lg:flex-row w-full text-left">
           <img src="./asset/infoimg/img4.png" alt="" />
           <div>
-            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="font-semibold">2. Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
           </div>
         </div>
-        <div class="flex w-full text-left mt-10">
+        <div class="flex flex-col lg:flex-row w-full text-left mt-10">
           <img src="./asset/infoimg/img2.png" alt="" />
           <div>
-            <h1 class="font-semibold">Lorem ipsum dolor sit amet.</h1>
+            <h1 class="font-semibold">4. Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatem nobis consequuntur modi reprehenderit dolorem.</p>
           </div>
         </div>
@@ -118,7 +126,7 @@
     </div>
 
     <div class="container flex items-center mx-auto mt-10">
-      <div class="grid grid-cols-4 gap-2 content-center mx-auto">
+      <div class="grid grid-row lg:grid-cols-4 gap-2 content-center mx-auto">
         <div class="relative">
           <button class="hover:scale-110 transition duration-300">
             <img class="hover:bg-gray-200 focus:outline-none" src="./asset/menu/hotel1.png" alt="konten1" />
@@ -143,6 +151,7 @@
         </div>
         <div class="relative">
           <button class="hover:scale-110 transition duration-300">
+            <a href="tour.html">
             <img src="./asset/menu/tour.png" alt="konten3" />
             <div class="absolute top-0 left-0 right-32 bottom-20 flex items-end justify-center">
               <p class="text-white text-4xl font-bold p-4">Tour</p>
@@ -150,6 +159,7 @@
             <div class="absolute top-0 left-0 right-20 bottom-10 flex items-end justify-center">
               <p class="text-white text-xl font-semibold p-4">SEE MORE ></p>
             </div>
+            </a>
           </button>
         </div>
         <div class="relative">
@@ -168,9 +178,18 @@
 
 <!-- comment -->
 
-    <div class="bg-cover mx-auto min-h-screen flex items-center mt-10 bg-fixed bg-no-repeat" style="background-image:url(./asset/komen/bg-img3.png) ;">
-<!-- This is an example component -->
-<div class=" container grid grid-cols-3 gap-7  content-center mx-auto">
+    <div class="bg-cover mx-auto min-h-screen mt-10 bg-fixed bg-no-repeat" style="background-image:url(./asset/komen/bg-img3.png) ;">
+       
+      
+      <div class="flex justify-center py-10">
+    <span class="">
+      <p class="font-semibold text-2xl sm:text-5xl text-white">Lorem ipsum dolor sit amet.</p>
+      <p class="font-normal text-xl sm:text-2xl text-white">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </span>
+    </div>
+
+      <!-- This is an example component -->
+<div class=" container grid grid-row lg:grid-cols-3 gap-7  content-center mx-auto">
     <div class="relative flex bg-white border rounded-lg shadow-lg">
         <img src="./asset/komen/profil1.png" class="relative rounded-full -top-8 -mb-4 bg-blue-400 border h-20 w-20" alt="" loading="lazy">
         <div class="flex flex-col w-full">
@@ -229,7 +248,7 @@
           <div class="mb-6 md:mb-0">
               <a href="#" class="flex items-center">
                   <img src="./asset/logokita.png" class="h-16  mr-3" alt="Logo footer" />
-                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:to-blue-400">HOLOCATION</span>
               </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
