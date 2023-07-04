@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvenir Yogyakarta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-auto">
+    <header>
+        <div class="bg-[url('./asset/tour/bg-nav.png')] bg-no-repeat">
+            <div class="container py-6 mx-auto">
+                <!-- navbar -->
+                <nav class="flex justify-between items-center">
+                    <a href="landingpage.html">
+                        <div>
+                            <ul class="font-bold px-8 text-3xl opacity-100">
+                                <li><img class="w-16" src="./asset/logokita.png" alt="" /></li>
+                            </ul>
+                        </div>
+                    </a>
+                    <ul class="font-bold text-3xl lg:flex gap-6 hidden text-white">
+                        <h1>Popular Destinations Tour</h1>
+                    </ul>
+                    <div class="gap-6 px-8 lg:flex hidden">
+                        <button class="text-white bg-blue-400 px-6 py-3 rounded-md">LOGIN</button>
+                        <button class="text-blue-400 outline px-6 py-2.5 rounded-md">SIGN IN</button>
+                    </div>
+                    <button class="lg:hidden block buttonToogle">
+                        <img src="./asset/humburger.png" alt="hamburger" />
+                    </button>
+                </nav>
+            </div>
+        </div>
+        <div class="mobilemenu hidden">
+            <ul class="font-semibold gap-6">
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">
+                    Trends</li>
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">
+                    Product</li>
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">
+                    LookYou</li>
+                <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">
+                    About</li>
+                <img class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300"
+                    src="../asset/cart.png" alt="" />
+            </ul>
+            <div class="gap-2 flex">
+                <button class="w-full text-white bg-blue-400 px-6 py-3 text-2xl">LOGIN</button>
+                <button class="w-full text-blue-400 outline px-6 py-2.5">SIGN IN</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- akhir navbar -->
+        <!-- fungsi Navbar Mobile -->
+
+        <script>
+            const buttonToogle = document.querySelector(".buttonToogle");
+            const mobilemenu = document.querySelector(".mobilemenu");
+
+            buttonToogle.addEventListener("click", function () {
+                mobilemenu.classList.toggle("hidden");
+            });
+        </script>
+        <!-- akhri navbar mobile -->
+    </header>
+    <main>
+        <section id="souveniryk">
+
+            <div id="bungkusluar" class="container flex justify-between px-16 py-10 mx-auto">
+                <div id="bungkus-kiri" class="flex flex-col w-1/4 gap-16 px-12 py-4 text-black font-sans text-xl items-center">
+                    <div class="pt-8 mb-8">
+                        <h2>Menu Produk</h2>
+                    </div>
+                    <button class="hover:underline">T-Shirt</button>
+                    <button class="hover:underline">Aksesoris</button>
+                    <button class="hover:underline">Makanan</button>
+                    <button class="hover:underline">Product</button>
+                </div>
+                <div id="bungkus-kanan" class="flex flex-col w-3/4 gap-5 pt-16 px-10">
+                    <div class="flex flex-row justify-between gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img class="mx-auto" src=".\asset\souvenir\bajusouvenir.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="">Kaos Aksara</h2>
+                            </div>
+                            <div>
+                                <p class="text-xs bottom-0 text-orange-500">Rp. 45,000</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img class="mx-auto" src=".\asset\souvenir\bajusouvenir.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="">Kaos Aksara</h2>
+                            </div>
+                            <div>
+                                <p class="text-xs text-orange-500">Rp. 45,000</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img class="mx-auto" src=".\asset\souvenir\bajusouvenir.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="">Kaos Aksara</h2>
+                            </div>
+                            <div>
+                                <p class="text-xs bottom-0 text-orange-500">Rp. 45,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row justify-between gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img class="mx-auto" src=".\asset\souvenir\bajusouvenir.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="">Kaos Aksara</h2>
+                            </div>
+                            <div>
+                                <p class="text-xs bottom-0 text-orange-500">Rp. 45,000</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img class="mx-auto" src=".\asset\souvenir\bajusouvenir.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="">Kaos Aksara</h2>
+                            </div>
+                            <div>
+                                <p class="text-xs bottom-0 text-orange-500">Rp. 45,000</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="">
+                                <img class="mx-auto" src=".\asset\souvenir\bajusouvenir.png" alt="" />
+                            </div>
+                            <div>
+                                <h2 class="">Kaos Aksara</h2>
+                            </div>
+                            <div>
+                                <p class="text-xs bottom-0 text-orange-500">Rp. 45,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
