@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>konten1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-[url('./asset/navbarimg2.png')] bg-no-repeat bg-cover">
+      <div class="container mx-auto py-4">
+        <!-- navbar -->
+        <nav class="flex justify-between items-center">
+          <a href="landingpage.html">
+            <div>
+              <ul class="font-bold text-3xl opacity-100">
+                <li><img class="w-16" src="./asset/logokita.png" alt="" /></li>
+              </ul>
+            </div>
+          </a>
+
+          <ul class="font-semibold text-2xl lg:flex gap-6 hidden text-blue-400">
+            <li>
+              <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-blue-400 hover:text-blue-500 font-medium rounded-lg text-2xl text-center inline-flex items-center" type="button">
+                Liburan
+                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownHover" class="z-10 hidden bg-white rounded-lg shadow w-44 dark:bg-blue-400">
+                <ul class="py-2 text-lg text-white" aria-labelledby="dropdownHoverButton">
+                  <li>
+                    <a href="tour.html" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Tour</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Hotel</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Souvenir</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Train</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <a href="profil.html">
+              <li class="cursor-pointer hover:text-blue-600 bg-opacity-70 ease-in duration-300">My Profile</li>
+            </a>
+            <li class="cursor-pointer hover:text-blue-600 bg-opacity-70 ease-in duration-300">my E-tiket</li>
+          </ul>
+          <div class="text-2xl font-bold gap-6 lg:flex hidden">
+            <!-- <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl">my E-tiket</button> -->
+            <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl">LOGIN</button>
+            <button class="text-blue-400 outline px-6 py-2.5 rounded-lg text-2xl">SIGN IN</button>
+          </div>
+          <button class="lg:hidden block buttonToogle">
+            <img src="./asset/humburger.png" alt="hamburger" />
+          </button>
+        </nav>
+        <!-- mobileMenu(responsifmobile) -->
+        <div class="mobilemenu hidden">
+          <ul class="font-semibold gap-6">
+            <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">Liburan</li>
+            <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">My Profile</li>
+            <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">My Etiket</li>
+          </ul>
+          <div class="text-2xl font-bold gap-2 flex">
+            <button class="w-full text-white bg-blue-400 px-6 py-3 text-2xl">LOGIN</button>
+            <button class="w-full text-blue-400 outline px-6 py-2.5">SIGN IN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar Mobile -->
+
+    <script>
+      const buttonToogle = document.querySelector(".buttonToogle");
+      const mobilemenu = document.querySelector(".mobilemenu");
+
+      buttonToogle.addEventListener("click", function () {
+        mobilemenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- header background -->
+    <div class="bg-[url('./asset/article/headerbg.png')] bg-no-repeat bg-cover py-10 mt-5">
+      <div class="container mx-auto">
+        <p class="text-5xl font-semibold text-white text-center">Tips and Trick</p>
+      </div>
+    </div>
+
+    <div class="container mt-10 mx-auto">
+        <div class="flex justify-between">
+        <div class="flex flex-row gap-4">
+        <div class="flex flex-col ">
+          <img src="./asset/article/konten/konten1/1.png" alt="" />
+        </div>
+      
+      <div class="flex flex-col gap-4">
+        <img src="./asset/article/konten/konten1/2.png" alt="" />
+        <img src="./asset/article/konten/konten1/3.png" alt="">
+      </div>
+      </div>
+
+      <div class="flex flex-col gap-8">
+
+      
+        <div class="flex flex-row gap-2">
+        
+        <div class="relative">
+            <div class="absolute top-16 left-11">
+                <button class=" bg-blue-400 text-white h-9  w-16  rounded-md text-xl hover:bg-blue-500 ">More</button>
+            </div>
+            <img  src="./asset/article/konten/konten1/artikel1.png" alt="">
+        </div>
+        <div>
+            <p>20-07-2023</p>
+            <span class="font-semibold text-lg">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum roro tott.</p>
+            <p>Lorem ipsum sito qoqt.</p>
+            </span>
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-2">
+        
+        <div class="relative">
+            <div class="absolute top-16 left-11">
+                <button class=" bg-blue-400 text-white h-9  w-16  rounded-md text-xl hover:bg-blue-500 ">More</button>
+            </div>
+            <img  src="./asset/article/konten/konten1/artikel2.png" alt="">
+        </div>
+        <div>
+            <p>20-07-2023</p>
+            <span class="font-semibold text-lg">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum roro tott.</p>
+            <p>Lorem ipsum sito qoqt.</p>
+            </span>
+        </div>
+      </div>
+      
+
+              <div class="flex flex-row gap-2">
+        
+        <div class="relative">
+            <div class="absolute top-16 left-11">
+                <button class=" bg-blue-400 text-white h-9 w-16  rounded-md text-xl hover:bg-blue-500 ">More</button>
+            </div>
+            <img src="./asset/article/konten/konten1/artikel3.png" alt="">
+        </div>
+        <div>
+            <p>20-07-2023</p>
+            <span class="font-semibold text-lg">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum roro tott.</p>
+            <p>Lorem ipsum sito qoqt.</p>
+            </span>
+        </div>
+      </div>
+
+              <div class="flex flex-row gap-2">
+        
+        <div class="relative">
+            <div class="absolute top-16 left-11">
+                <button class=" bg-blue-400 text-white h-9 w-16  rounded-md text-xl hover:bg-blue-500 ">More</button>
+            </div>
+            <img src="./asset/article/konten/konten1/artikel4.png" alt="">
+        </div>
+        <div>
+            <p>20-07-2023</p>
+            <span class="font-semibold text-lg">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem ipsum roro tott.</p>
+            <p>Lorem ipsum sito qoqt.</p>
+            </span>
+        </div>
+      </div>
+
+      
+
+      </div>
+      
+      
+      </div>
+      <div>
+        <span>
+        <h1 class="font-semibold text-2xl my-4">Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente vel vero hic rerum Lorem, ipsum.</p>
+        <p> beatae molestiae esse enim, ab nesciunt et autem dolorem ea suscipit sequi. Hic consequuntu  ipsum s</p>
+        <p>r nihil eius vel dolor perspiciatis laborum atque, nemo porro voluptas? Lorem, ipsum dolor.loremipsum</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente vel vero hic rerum Lorem, ipsum.</p>
+        <p> beatae molestiae esse enim, ab nesciunt et autem dolorem ea suscipit sequi. Hic consequuntu  ipsum s</p>
+        <p>r nihil eius vel dolor perspiciatis laborum atque, nemo porro voluptas? Lorem, ipsum dolor.loremipsum</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente vel vero hic rerum Lorem, ipsum.</p>
+        <p> beatae molestiae esse enim, ab nesciunt et autem dolorem ea suscipit sequi. Hic consequuntu  ipsum s</p>
+        <p>r nihil eius vel dolor perspiciatis laborum atque, nemo porro voluptas? Lorem, ipsum dolor.loremipsum</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente vel vero hic rerum Lorem, ipsum.</p>
+        <p> beatae molestiae esse enim, ab nesciunt et autem dolorem ea suscipit sequi. Hic consequuntu  ipsum s</p>
+        <p>r nihil eius vel dolor perspiciatis laborum atque, nemo porro voluptas? Lorem, ipsum dolor.loremipsum</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente vel vero hic rerum Lorem, ipsum.</p>
+        <p> beatae molestiae esse enim, ab nesciunt et autem dolorem ea suscipit sequi. Hic consequuntu  ipsum s</p>
+        <p>r nihil eius vel dolor perspiciatis laborum atque, nemo porro voluptas? Lorem, ipsum dolor.loremipsum</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil sapiente vel vero hic rerum Lorem, ipsum.</p>
+        <p> beatae molestiae esse enim, ab nesciunt et autem dolorem ea suscipit sequi. Hic consequuntu  ipsum s</p>
+        <p>r nihil eius vel dolor perspiciatis laborum atque, nemo porro voluptas? Lorem, ipsum dolor.loremipsum</p>
+
+        </span>
+    </div>
+</div>
+  </body>
+</html>
