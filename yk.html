@@ -1,113 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yogyakarta</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <div class="bg-[url('./asset/yk/navbg.png')]">
-        <div class="container mx-auto py-12">
-            <p class="text-center text-4xl text-white">Yogyakarta</p>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+  </head>
+  <body>
+    <div class="bg-[url('./asset/navbarimg2.png')] bg-no-repeat bg-cover">
+      <div class="container mx-auto py-4">
+        <!-- navbar -->
+        <nav class="flex justify-between items-center">
+          <a href="landingpage.html">
+            <div>
+              <ul class="font-bold text-3xl opacity-100">
+                <li><img class="w-16" src="./asset/logokita.png" alt="" /></li>
+              </ul>
+            </div>
+          </a>
+
+          <ul class="font-semibold text-2xl lg:flex gap-6 hidden text-blue-400">
+            <li>
+              <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-blue-400 hover:text-blue-500 font-medium rounded-lg text-2xl text-center inline-flex items-center" type="button">
+                Liburan
+                <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownHover" class="z-10 hidden bg-white rounded-lg shadow w-44 dark:bg-blue-400">
+                <ul class="py-2 text-lg text-white" aria-labelledby="dropdownHoverButton">
+                  <li>
+                    <a href="tour.html" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Tour</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Hotel</a>
+                  </li>
+                  <li>
+                    <a href="souvenir.html" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Souvenir</a>
+                  </li>
+                  <li>
+                    <a href="artikel.html" class="block px-4 py-2 dark:hover:bg-blue-500 dark:hover:text-white">Article</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <a href="profil.html">
+              <li class="cursor-pointer hover:text-blue-600 bg-opacity-70 ease-in duration-300">My Profile</li>
+            </a>
+            <a href="MyEtiket.html">
+              <li class="cursor-pointer hover:text-blue-600 bg-opacity-70 ease-in duration-300">my E-tiket</li>
+            </a>
+          </ul>
+          <div class="text-2xl font-bold gap-6 lg:flex hidden">
+            <!-- <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl">my E-tiket</button> -->
+            <button class="text-white bg-blue-400 px-6 py-3 rounded-lg text-2xl">LOGIN</button>
+            <button class="text-blue-400 outline px-6 py-2.5 rounded-lg text-2xl">SIGN IN</button>
+          </div>
+          <button class="lg:hidden block buttonToogle">
+            <img src="./asset/humburger.png" alt="hamburger" />
+          </button>
+        </nav>
+        <!-- mobileMenu(responsifmobile) -->
+        <div class="mobilemenu hidden">
+          <ul class="font-semibold gap-6">
+            <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">Liburan</li>
+            <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">My Profile</li>
+            <li class="py-6 px-4 cursor-pointer hover:bg-thirdty bg-blue-400 bg-opacity-70 ease-in duration-300">My Etiket</li>
+          </ul>
+          <div class="text-2xl font-bold gap-2 flex">
+            <button class="w-full text-white bg-blue-400 px-6 py-3 text-2xl">LOGIN</button>
+            <button class="w-full text-blue-400 outline px-6 py-2.5">SIGN IN</button>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Navbar Mobile -->
+
+    <script>
+      const buttonToogle = document.querySelector(".buttonToogle");
+      const mobilemenu = document.querySelector(".mobilemenu");
+
+      buttonToogle.addEventListener("click", function () {
+        mobilemenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <div class="bg-[url('./asset/yk/navbg.png')]">
+      <div class="container mx-auto py-10 mt-5">
+        <p class="text-5xl font-semibold text-white text-center">Yogyakarta</p>
+      </div>
     </div>
 
     <div class="flex flex-wrap justify-center px-4 md:px-10 py-3">
-        <div class="md:flex grid grid-cols-3 gap-4">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="./asset/yk/g1.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Jogja Sunset candi </div> 
-              <div class="font-bold text-xl mb-2">Ratu Boko </div>
-              <div class="flex justify-between items-end">
-                <div></div>
-                <div class="font-bold mr-28 mb-3 text-orange-400">IDR 40.000</div>
-                <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
-                  <a href="tiketing.html">Lihat Detail</a>
-                </button>
-              </div>
-            </div>
-          </div>
-      
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="./asset/yk/g2.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Keraton Yogyakarta </div> 
-              <div class="font-bold text-xl mb-2">Taman Sari  </div>
-              <div class="flex justify-between items-end">
-                <div></div>
-                <div class="font-bold mr-28 mb-3 text-orange-400">IDR 20.000</div>
-                <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-      
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="./asset/yk/g3.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2"> Gunung Merapi </div> 
-              <div class="font-bold text-xl mb-2">Jeep Lava Tour  </div>
-              <div class="flex justify-between items-end">
-                <div></div>
-                <div class="font-bold mr-28 mb-3 text-orange-400">IDR 300.000</div>
-                <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
-                  Lihat Detail
-                </button>
-              </div>
+      <div class="md:flex grid grid-cols-3 gap-4">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+          <img class="w-full" src="./asset/yk/g1.png" alt="Sunset in the mountains" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Jogja Sunset candi</div>
+            <div class="font-bold text-xl mb-2">Ratu Boko</div>
+            <div class="flex justify-between items-end">
+              <div></div>
+              <div class="font-bold mr-28 mb-3 text-orange-400">IDR 40.000</div>
+              <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
+                <a href="tiketing.html">Lihat Detail</a>
+              </button>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="flex flex-wrap justify-center px-4 md:px-10 py-3">
-        <div class="md:flex grid grid-cols-3 gap-4">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="./asset/yk/g4.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Malioboro </div> 
-              <div class="flex justify-between items-end">
-                <div></div>
-                <div class="font-bold mr-24 mb-3 text-orange-400">IDR 3.000.000</div>
-                <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-      
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="./asset/yk/g5.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2">Kompleks Candi Borobudur </div> 
-              <div class="flex justify-between items-end">
-                <div></div>
-                <div class="font-bold mr-28 mb-3 text-orange-400">IDR 50.000</div>
-                <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-      
-          <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
-            <img class="w-full" src="./asset/yk/g6.png" alt="Sunset in the mountains">
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-2"> Pantai Parangtritis </div> 
-              <div class="flex justify-between items-end">
-                <div></div>
-                <div class="font-bold mr-28 mb-3 text-orange-400">IDR 10.000</div>
-                <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">
-                  Lihat Detail
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
 
-</body>
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+          <img class="w-full" src="./asset/yk/g2.png" alt="Sunset in the mountains" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Keraton Yogyakarta</div>
+            <div class="font-bold text-xl mb-2">Taman Sari</div>
+            <div class="flex justify-between items-end">
+              <div></div>
+              <div class="font-bold mr-28 mb-3 text-orange-400">IDR 20.000</div>
+              <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+          <img class="w-full" src="./asset/yk/g3.png" alt="Sunset in the mountains" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Gunung Merapi</div>
+            <div class="font-bold text-xl mb-2">Jeep Lava Tour</div>
+            <div class="flex justify-between items-end">
+              <div></div>
+              <div class="font-bold mr-28 mb-3 text-orange-400">IDR 300.000</div>
+              <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap justify-center px-4 md:px-10 py-3">
+      <div class="md:flex grid grid-cols-3 gap-4">
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+          <img class="w-full" src="./asset/yk/g4.png" alt="Sunset in the mountains" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Malioboro</div>
+            <div class="flex justify-between items-end">
+              <div></div>
+              <div class="font-bold mr-24 mb-3 text-orange-400">IDR 3.000.000</div>
+              <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+          <img class="w-full" src="./asset/yk/g5.png" alt="Sunset in the mountains" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Kompleks Candi Borobudur</div>
+            <div class="flex justify-between items-end">
+              <div></div>
+              <div class="font-bold mr-28 mb-3 text-orange-400">IDR 50.000</div>
+              <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg m-5">
+          <img class="w-full" src="./asset/yk/g6.png" alt="Sunset in the mountains" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Pantai Parangtritis</div>
+            <div class="flex justify-between items-end">
+              <div></div>
+              <div class="font-bold mr-28 mb-3 text-orange-400">IDR 10.000</div>
+              <button class="font-bold text-xl mb-2 bg-blue-500 hover:bg-blue-700 text-white py-1 px-3 rounded">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
